@@ -17,6 +17,11 @@ class C_employee extends CI_Controller
 		$this->load->view('home', $show);
 	}
 
+	public function add()
+	{
+		$this->load->view('add');
+	}
+
 	public function detail($id)
 	{
 		$detailemployee = $this->M_employee->detail_employee($id);

@@ -18,41 +18,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
-						<div class="card-header">
-							<h3 class="card-title"> Add Data Employee</h3>
+						<div class="form-group">
+							<label class='col-xs-3'>First Name</label>
+							<div class='col-xs-8'><input type="text" name="project_name" autocomplete="off" required placeholder="Masukkan Nama Project" class="form-control"></div>
 						</div>
-						<div class="card-body">
-							<div class="table-responsive">
-								<table style="width: 100%;" id="example1" class="table table-bordered table-striped">
-									<thead>
-										<tr>
-											<th class="text-center">No</th>
-											<th class="text-center">Name</th>
-											<th class="text-center">Email</th>
-											<th class="text-center">Position</th>
-											<th class="text-center">Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<?php
-										$nomor = 1;
-										foreach ($dataemployee as $d) {
-											$id = $d['id']; ?>
-											<tr class="odd gradeX">
-												<td style="width: 2%; vertical-align:middle;" class="text-center"><?php echo $nomor++; ?></td>
-												<td style="width: 13%; vertical-align:middle;" class="text-center"><?php echo $d['first_name']; ?> <?php echo $d['last_name']; ?></td>
-												<td style="width: 15%;" class="text-center"><?php echo $d['email']; ?></td>
-												<td style="width: 10%;" class="text-center"><?php echo $d['position']; ?></td>
-												<td style="width: 10%;" class="text-center ">
-													<a href="<?php echo base_url() . "detail/" . $d['id']; ?>" class="btn btn-primary btn-circle btn-sm"><i class="fas fa-eye"></i></a>
-													<button type="button" class="btn btn-warning btn-circle btn-sm" title="Edit Data"><i class="fas fa-edit"></i></button>
-													<a href="<?php echo base_url('delete/' . $d['id']); ?>" onclick="return confirm('Are you sure to delete this data employee ( <?= $d['first_name']; ?> ) ?');" class="btn btn-danger btn-circle btn-sm" data-popup="tooltip" data-placement="top" title="Hapus Data"><i class="fa fa-trash"></i></a>
-												</td>
-											</tr>
-										<?php } ?>
-									</tbody>
-								</table>
-							</div>
+						<div class="form-group">
+							<label class='col-xs-3'>Last Name</label>
+							<div class='col-xs-8'><textarea required class="form-control" rows="3" name="project_location"></textarea></div>
 						</div>
 					</div>
 				</div>
