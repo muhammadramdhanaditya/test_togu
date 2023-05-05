@@ -47,6 +47,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								</div>
 							</div>
 						</div>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary float-right ml-3"><i class="fa fa-save"> </i> Save</button>
+							<a class="btn btn-danger float-right" href="<?php echo base_url() . "employee" ?>"><i class="fa fa-undo"> </i> Back</a>
+						</div>
 					</div>
 				</div>
 			</div>
