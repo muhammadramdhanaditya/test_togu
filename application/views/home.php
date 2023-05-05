@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<h3 class="card-title">Data Employee</h3>
 							</div>
 							<div class="card-body">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-tambah"><i class="fa fa-plus-circle"></i> Add Data Employee </button><br><br>
+								<button type="button" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add Data Employee </button><br><br>
 								<div class="table-responsive">
 									<table style="width: 100%;" id="example1" class="table table-bordered table-striped">
 										<thead>
@@ -54,28 +54,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											<?php } ?>
 										</tbody>
 									</table>
-								</div>
-								<div class="modal fade" id="modal-tambah" tabindex="-1" role="dialog" aria-labelledby="modal-tambah-label" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="modal-tambah-label">Add Data Employee</h5>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<!-- Konten form untuk menambahkan data employee -->
-												<form>
-													<!-- Isi form di sini -->
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary">Save changes</button>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
