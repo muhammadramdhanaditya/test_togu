@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								<h3 class="card-title">Data Employee</h3>
 							</div>
 							<div class="card-body">
-								<button type="button" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add Data Employee </button><br><br>
+								<a href="<?php echo base_url() . "addemployee" ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add Data Employee</a><br><br>
 								<div class="table-responsive">
 									<table style="width: 100%;" id="example1" class="table table-bordered table-striped">
 										<thead>

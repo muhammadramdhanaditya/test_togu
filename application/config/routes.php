@@ -53,7 +53,7 @@ $route['default_controller'] = 'C_employee';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['employee)'] = 'C_employee/index';
-$route['addemployee)'] = 'C_employee/add';
+$route['employee'] = 'C_employee/index';
+$route['addemployee'] = 'C_employee/add';
 $route['detail/(:num)'] = 'C_employee/detail/$1';
 $route['delete/(:num)'] = 'C_employee/delete/$1';

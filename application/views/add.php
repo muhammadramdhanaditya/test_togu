@@ -18,13 +18,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
-						<div class="form-group">
-							<label class='col-xs-3'>First Name</label>
-							<div class='col-xs-8'><input type="text" name="project_name" autocomplete="off" required placeholder="Masukkan Nama Project" class="form-control"></div>
+						<div class="card-header">
+							<h3 class="card-title"> Add Data Employee</h3>
 						</div>
-						<div class="form-group">
-							<label class='col-xs-3'>Last Name</label>
-							<div class='col-xs-8'><textarea required class="form-control" rows="3" name="project_location"></textarea></div>
+						<div class="card-body">
+							<div class="col-12">
+								<div class="row">
+									<div class="form-group col-6">
+										<label class='col-xs-3'>First Name</label>
+										<div class='col-xs-8'><input type="text" name="project_name" autocomplete="off" required placeholder="First Name" class="form-control"></div>
+									</div>
+									<div class="form-group col-6">
+										<label class='col-xs-3'>Last Name</label>
+										<div class='col-xs-8'><input type="text" name="project_name" autocomplete="off" required placeholder="Last Name" class="form-control"></div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
