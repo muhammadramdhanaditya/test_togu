@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['employee'] = 'C_employee/index';
 $route['addemployee'] = 'C_employee/add';
+$route['addsave'] = 'C_employee/add_save';
 $route['addaddress'] = 'C_employee/add_address';
 $route['detail/(:num)'] = 'C_employee/detail/$1';
 $route['delete/(:num)'] = 'C_employee/delete/$1';
