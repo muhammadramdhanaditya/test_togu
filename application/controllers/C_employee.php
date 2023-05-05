@@ -22,6 +22,11 @@ class C_employee extends CI_Controller
 		$this->load->view('add');
 	}
 
+	public function add_address()
+	{
+		$this->load->view('add_address');
+	}
+
 	public function detail($id)
 	{
 		$detailemployee = $this->M_employee->detail_employee($id);
@@ -49,6 +54,24 @@ class C_employee extends CI_Controller
 			redirect('employee');
 		} else {
 			$pesan = "Delete Data Failed !";
+			$this->flashdata_failed($pesan);
+			redirect('employee');
+		}
+	}
+
+	public function delete_address($id)
+	{
+		$get = $this->M_employee->GetData("detail_employee ", "where id = '$id'");
+		$id_employee = $get[0]['id'];
+		$where = array('id' => $id_employee);
+		$this->M_employee->DeleteData('detail_employee', $where);
+		$this->db->trans_complete();
+		if ($this->db->trans_status() === TRUE) {
+			$pesan = "Delete Data Address Done !";
+			$this->flashdata_succeed($pesan);
+			redirect('employee');
+		} else {
+			$pesan = "Delete Data Address Failed !";
 			$this->flashdata_failed($pesan);
 			redirect('employee');
 		}
